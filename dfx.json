@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "my-second-project-backend": {
+      "candid": "src/my-second-project-backend/my-second-project-backend.did",
+      "package": "my-second-project-backend",
+      "type": "rust"
+    },
+    "my-second-project-frontend": {
+      "dependencies": [
+        "my-second-project-backend"
+      ],
+      "source": [
+        "src/my-second-project-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my-second-project-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
